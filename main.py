@@ -28,7 +28,7 @@ def change_name(contact_list):
     return correct_contact_list
 
 def change_phone_number(contact_list):
-    pattern = r'(\+7|8)\s*\(*(\d+)[\)\s-]*(\d+)[\)\s-]*[-|\s]*([\d]+)[-\s]*([\d]+)[\s+\(]*(доб\.)?\s*(\d+)?'
+    pattern = r"(\+7|8)\s*\(*(\d{3})[\)\s-]*(\d{3})[\)\s-]*[-|\s]*([\d]{2})[-\s]*([\d]{2})[\s+\(]*(доб\.)?\s*(\d+)?"
     result = []
     for element in contact_list:
         element_str = ','.join(element)
