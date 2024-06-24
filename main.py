@@ -2,7 +2,7 @@ import csv
 import re
 
 def change_name(contact_list):
-    correct_contact_list = []
+    correct_contact_list = [contact_list[0]]
     for contact in contact_list[1:]:
         name = contact[0:3]
         name_str = (' ').join(name).rstrip()
